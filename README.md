@@ -15,9 +15,12 @@
 This is an example of inline script dependencies, a feature described in [PEP 723](https://peps.python.org/pep-0723/) and implemented by `uv run`. Running the script causes uv to create a temporary virtual environment with those dependencies installed, a process that takes just a few milliseconds once the uv cache has been populated. This also works if the script is specified by a URL. Anyone with uv installed can run the following command:
 
 ```bash
-uv run ...
+uv run https://raw.githubusercontent.com/LVG77/uv_scripts/refs/heads/main/fetch_yt_subs/fetch_subs.py <youtube_url>
 ```
 
 ## Description
 
-- [fetch_yt_subs/fetch_subs.py](fetch_yt_subs/fetch_subs.py): Fetch subtitles from a YouTube video.
+- [fetch_yt_subs/fetch_subs.py](fetch_yt_subs/fetch_subs.py): Fetch subtitles from a YouTube video. Example usage:
+```bash
+uv run https://raw.githubusercontent.com/LVG77/uv_scripts/refs/heads/main/fetch_yt_subs/fetch_subs.py <youtube_url>
+```
